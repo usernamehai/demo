@@ -1,0 +1,135 @@
+9)Write a program to demonstrate States &
+Props using React JS.
+
+step1 :
+npx create-react-app props  
+
+step2:
+ cd props
+
+step3:
+  npm start
+
+
+step4:
+src/App.js:
+import React, { Component } from "react";
+import "./index.css";
+import Props from './Props';
+
+class App extends Component {
+  render() {
+    return (
+      <div className="container">
+        <Props 
+          account_no='1234' 
+          roi="9" 
+          loc='thane' 
+          type='savings' 
+          branch='thane' 
+          bal='4567898' 
+        />
+      </div>
+    );
+  }
+}
+
+export default App;
+
+
+
+step5:
+create a new file in src with name Props.js
+
+import React from 'react'
+
+function Props(props) {
+  return (
+    <div>
+      <h1>account details are:</h1>
+      <h2>Account no: {props.account_no}<br></br>
+        balance: {props.bal}<br></br>
+        Branch: {props.branch}<br></br>
+        Location: {props.loc}<br></br>
+        Rate of intrest: {props.roi}<br></br>
+        type of acc: {props.type}<br></br>
+      </h2>
+    </div>
+  )
+}
+
+export default Props
+
+
+step6: to execute 
+
+npm start
+
+
+
+
+
+
+States :
+
+Step1:
+npx create-react-app state
+
+step2:
+cd state
+
+npm start
+
+step3:
+src/State.js
+
+import React, { Component } from 'react'
+
+export default class Count extends Component {
+  
+  constructor() {
+    super();
+    this.state = {
+      count: 0
+    }
+  }
+
+  increment = () => {
+    this.setState({ count: this.state.count + 1 });
+  };
+
+  decrement = () => {
+    this.setState({ count: this.state.count - 1 });
+  };
+
+  render() {
+    return (
+      <div>
+        <h1>Count is: {this.state.count}</h1>
+        <button onClick={this.increment}>Increment</button>
+        <button onClick={this.decrement}>Decrement</button>
+      </div>
+    )
+  }
+}
+
+
+
+step4:
+App.js
+
+import React, { Component } from "react"; // You were missing this line
+import "./index.css";
+import Count from './State'; 
+
+class App extends Component {
+  render() {
+    return (
+      <div className="container">
+        <Count />
+      </div>
+    );
+  }
+}
+
+export default App;

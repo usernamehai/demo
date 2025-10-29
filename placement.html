@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<style>
+body {
+  background-color: rgb(134, 122, 221);
+}
+fieldset {
+  background-color: rgb(77, 29, 187);
+  margin-bottom: 20px; 
+}
+</style>
+</head>
+<body>
+<marquee><h1>Placement form</h1></marquee>
+<br><br>
+
+<h2>Personal Info</h2>
+<fieldset>
+  Name:
+  <input type="text" placeholder="First name" size="10">
+  <input type="text" placeholder="Last name" size="10"><br><br>
+
+  Email:
+  <input type="email"><br><br>
+
+  Password:
+  <input type="password"><br><br>
+
+  Gender:<br>
+  <input type="radio" name="r1">Male<br>
+  <input type="radio" name="r1">Female<br>
+  <input type="radio" name="r1">Other<br><br>
+
+  Address:
+  <textarea rows="3" cols="17"></textarea><br><br>
+
+  Phone:
+  <input type="text" size="2" value="+91">
+  <input type="text">
+</fieldset>
+
+<h2>College Info</h2>
+<fieldset>
+  Dept:
+  <input type="checkbox">IT
+  <input type="checkbox">CO
+  <input type="checkbox">AIML
+  <br><br>
+
+  College Email:
+  <input type="email"><br><br>
+
+  Student Id:
+  <input type="number"><br><br>
+
+  Year:
+  <select>
+    <option value="FE">FE</option>
+    <option value="SE">SE</option>
+    <option value="TE">TE</option>
+    <option value="BE">BE</option>
+  </select>
+</fieldset>
+
+<h2>Uploads</h2>
+<fieldset>
+  Upload Certificate:
+  <input type="file"><br><br>
+
+  Upload Resume:
+  <input type="file"><br><br>
+</fieldset>
+
+<input type="button" id="s1" value="Submit">
+</body>
+</html>

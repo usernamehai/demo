@@ -1,0 +1,36 @@
+import React, { Component } from "react";
+ class Refs extends Component {
+  constructor(props) {
+    super(props);
+    this.textRef = React.createRef();
+  }
+  edit1 = () => {
+    const textElement = this.textRef.current;
+    if
+ (textElement) {
+      textElement.innerText = "Shaikh";
+      textElement.style.fontSize = "35px";
+      textElement.style.fontFamily = "cursive"
+      textElement.style.color = "green";
+    }
+  };
+  
+  edit2 = () => {
+    const textElement = this.textRef.current;
+    if
+    }
+  };
+ (textElement) {
+      textElement.style.display = "none";
+  render() {
+    return (
+      <div style={{ textAlign: "center", marginTop: "50px" }}>
+        <h1 ref={this.textRef}>Aptab</h1>
+        <button onClick={this.edit1}>Change Text</button>
+        <button onClick={this.edit2} style={{ marginLeft: "10px" }}> Hide Text 
+</button>
+      </div>
+    );
+  }
+ }
+ export default Refs;

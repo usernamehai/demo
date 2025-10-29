@@ -1,0 +1,46 @@
+11.Write a program to create an application using Express App.
+
+
+code:
+routing.js
+var express = require('express');
+var app = express();
+
+app.get('/', function (req, res) {
+  console.log("Got a GET request for the home");
+  res.send('Welcome to Express JS!!!!!');
+});
+
+app.post('/', function (req, res) {
+  console.log("Got a POST request for the home");
+  res.send('I am Impossible!!!!!');
+});
+
+app.get('/del_student', function (req, res) {
+  console.log("Got a DELETE request for the home");
+  res.send('I am Deleted!!!!!');
+});
+
+app.get('/enrolled_student', function (req, res) {
+  console.log("Got a GET request for enrolled_student");
+  res.send('I am an enrolled student!!!!!');
+});
+
+app.get('/ab*cd', function (req, res) {
+  console.log("Got a request for /ab*cd");
+  res.send('Pattern matched!!!!!');
+});
+
+var server = app.listen(5000, function () {
+  var host = server.address().address;
+  var port = server.address().port;
+  console.log("Example app listening at http://%s:%s", host, port);
+});
+---------------------------------------------------------------------------
+node routing.js
+http://localhost:5000
+http://localhost:5000/
+http://localhost:5000/del_student
+http://localhost:5000/enrolled_student
+http://localhost:5000/abcxxyd
+

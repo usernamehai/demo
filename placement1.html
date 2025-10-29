@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Registration form</title>
+ <style>
+ body{
+ background-color: gray;
+ }
+ #f1{
+ background-color: aquamarine;
+ }
+ #f2{
+background-color: bisque;
+ }
+ #f3{
+ background-color: indianred;
+ }
+ </style>
+</head>
+<body >
+ <h1>Student Placement Registration form
+ </h1>
+ <br>
+ <fieldset id="f1">
+ <legend><h1>Academic Information</h1></legend>
+ <br>
+ Last Year Percentage:
+ <input type="text"><br><br>
+ Any Certification:
+ <input type="checkbox">PCAP-Python
+ <input type="checkbox">Cisco
+ <input type="checkbox">Redhat Linux
+ <input type="checkbox">Linux essential
+ <br><br>
+ Project Name: <input type="text">
+<br><br>
+ Intership Completed:
+ <select>
+ <option value="">Select Intership</option>
+ <option value="">Yes</option>
+ <option value="">NO</option>
+ </select>
+ </fieldset>
+ <fieldset id="f2">
+ <legend><h1>Personal Details</h1></legend>
+ Firstname:
+ <input type="text"><br><br>
+ Middlename:
+ <input type="text"><br><br>
+ Lastname:
+ <input type="text"><br><br>
+ Branch:
+ <select name="" id="">
+ <option value="">IT</option>
+ <option value="">AI-ML</option>
+ <option value="">DSE</option>
+ <option value="">ME</option>
+ </select>
+ <fieldset>
+ Gender :<br>
+ <input type="radio" name="g1" id="">Male<br>
+ <input type="radio" name="g1" id="">Female<br>
+ <input type="radio" name="g1" id="">Other<br>
+ </fieldset>
+ <br><br>
+ Phone (mob): <input type="tel" size="3" value="+91">
+ <input type="tel" size="10">
+ <br><br>
+ Address:<br>
+ <textarea name="" id="" rows="10" cols="20"></textarea>
+ <br>
+ Email:
+ <input type="email" name="" id=""
+placeholder="abc@gmail.com"><br><br>
+ Password:
+ <input type="password"><br><br>
+ Rr-type password:
+ <input type="password"><br><br>
+ </fieldset>
+ <fieldset id="f3">
+ <legend><h1>File Upload</h1></legend>
+ Upload Resume:
+<input type="file"><br><br>
+ Upload Marksheet:
+ <input type="file"><br><br>
+ </fieldset><br>
+ <input type="button" value="Submit">
+</body>
+</html>

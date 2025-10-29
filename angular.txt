@@ -1,0 +1,38 @@
+12.Write a program to demonstrate various Angular JS Directives.
+
+
+
+code:
+angular.html
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AngularJS Example</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+
+<body style="background-color: pink; text-align: center;">
+  <h1>{{'Name: name'}}</h1>
+  <h2>{{'Phone No: 87834233'}}</h2>
+  <h2>{{'Branch: Information Technology'}}</h2>
+  <h2>{{'Email: email@gmail.com'}}</h2>
+  <h2>{{'Address: Thane'}}</h2>
+
+  <br>
+
+  <h1>Calculating Simple Interest</h1>
+  <h2 ng-init="p=5; n=2; r=3">
+    Simple Interest = {{ (p * n * r) / 100 }}
+  </h2>
+
+  <h1>Area of Circle</h1>
+  <div ng-init="pi=3.14">
+    Radius: <input type="number" ng-model="rad">
+    <h2>Area of Circle = {{ pi * rad * rad }}</h2>
+  </div>
+</body>
+</html>
+------------------------------------------------------------------
+open in live server

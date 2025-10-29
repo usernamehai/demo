@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Simple E-commerce Store</title>
+<link href="stylee.css" rel="stylesheet" />
+</head>
+<body>
+<header>
+My E-Commerce Store
+</header>
+<div class="nav">
+<a href="#" class="n1">HOME</a>
+<a href="#" class="n1">CONTACT US</a>
+<a href="#" class="n1">ABOUT</a>
+</div>
+<br>
+<main>
+<section class="product-grid">
+<article class="product-card">
+<img class="product-image1" src="https://encrypted-tbn0.gstatic.com/shopping?
+q=tbn:ANd9GcQdKP4XKSr5N66z6be2mFoqMuO8Go_qVCzYWyGgPXVNzHe6R48zKyckaNYD
+R2utSriD5HOYJcvkAKEs2VNq8YxzGQTgThcV3dMAiMiYRhaSPvm8S1e30bd7Gg"
+alt="Product 1" />
+<div class="product-info">
+<h2 class="product-title">Stylish Sneakers</h2>
+<p class="product-description">Comfortable and trendy sneakers perfect for everyday
+wear.</p>
+<div class="product-price">$79.99</div>
+<a href="#" class="btn-buy">Buy Now</a>
+</div>
+</article>
+<article class="product-card">
+<img class="product-image2"
+src="https://www.carlington.in/cdn/shop/files/Carliongton_premium_black_analog_mens_
+s_watch_6020.jpg?v=1712818158&width=1024" alt="Product 2" />
+<div class="product-info">
+<h2 class="product-title">Classic Watch</h2>
+<p class="product-description">Elegant and timeless wristwatch for all occasions.</p>
+<div class="product-price">$149.99</div>
+<a href="#" class="btn-buy">Buy Now</a>
+</div>
+</article>
+<article class="product-card">
+<img class="product-image3" src="https://encrypted-tbn0.gstatic.com/images?
+q=tbn:ANd9GcQYXuF_g4QHM-EttAqFHzyappHw7yNbG8ltVg&s" alt="Product 3" />
+<div class="product-info">
+<h2 class="product-title">Leather Backpack</h2>
+<p class="product-description">Durable leather backpack with spacious
+compartments.</p>
+<div class="product-price">$99.99</div>
+<a href="#" class="btn-buy">Buy Now</a>
+</div>
+</article>
+</section>
+</main>
+<footer>
+&copy; 2025 My E-Commerce Store. All rights reserved.
+</footer>
+</body>
+</html>
+
+
+
+CSS
+
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color: #333;
+}
+header {
+background-color: #2c3e50;
+color: white;
+padding: 1.5rem 2rem;
+font-size: 1.8rem;
+font-weight: bold;
+text-align: center;
+}
+main {
+flex: 1;
+padding: 2rem;
+max-width: 1200px;
+margin: 0 auto;
+}
+.product-grid {
+display: grid;
+gap: 2rem;
+}
+.product-card {
+background-color: white;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+overflow: hidden;
+display: flex;
+flex-direction: row;
+}
+.product-card:hover {
+transform: translateY(-5px);
+}
+.product-image1{
+width: 200px;
+height: 220px;
+object-fit: cover;
+display: block;
+}
+.product-image2{
+width: 200px;
+height: 220px;
+object-fit: cover;
+display: block;
+}
+.product-image3{
+width: 200px;
+height: 220px;
+object-fit: cover;
+display: block;
+}
+.product-info {
+padding: 1rem 1.2rem;
+flex-grow: 1;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.product-title {
+font-size: 1.3rem;
+margin-bottom: 0.5rem;
+color: #2c3e50;
+}
+.product-description {
+flex-grow: 1;
+font-size: 0.9rem;
+margin-bottom: 1rem;
+color: #555;
+}
+.product-price {
+font-size: 1.2rem;
+font-weight: 700;
+color: #27ae60;
+margin-bottom: 1rem;
+}
+.btn-buy {
+background-color: #2980b9;
+color: white;
+text-align: center;
+padding: 0.7rem 1rem;
+border-radius: 3px;
+text-decoration: none;
+font-weight: 600;
+transition: background-color 0.3s ease;
+user-select: none;
+}
+.btn-buy:hover,
+.btn-buy:focus {
+background-color: #1c5980;
+outline: none;
+}
+.nav{
+background-color: #060c08;
+font-size: 30px;
+text-align: right;
+}
+.n1{
+color: aliceblue;
+font-size: 15px;
+font-weight: bold;
+margin-top: auto;
+padding: 1rem 0.58rem;
+}
+footer {
+background-color: #2c3e50;
+color: white;
+text-align: center;
+padding: 1rem 2rem;
+font-size: 0.9rem;
+margin-top: auto;
+box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
